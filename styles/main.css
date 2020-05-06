@@ -1,0 +1,182 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-family: "Oswald", sans-serif; }
+
+body {
+  margin: 0; }
+
+.game__container {
+  width: 524px;
+  margin: 0 auto; }
+
+.game__field {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  background-color: #f6d186;
+  border: 12px solid #f6d186;
+  border-radius: 12px; }
+
+.game__cell {
+  background-color: #fcf7bb;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 70px;
+  color: #fcf7bb; }
+  .game__cell--two {
+    background-color: #f2a365;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .game__cell--eight {
+    background-color: #fa744f;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .game__cell--third {
+    background-color: #f79071;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .game__cell--ten {
+    background-color: #f4e04d;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .game__cell--almost-win {
+    background-color: #b80d57;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .game__cell--win {
+    background-color: #c81912;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 50px; }
+  .game__cell__win-modal {
+    position: absolute;
+    width: 524px;
+    height: 524px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: rgba(242, 163, 101, 0.95);
+    border-radius: 12px; }
+  .game__cell__win-modal-text {
+    margin: 0;
+    color: #fff;
+    font-size: 100px;
+    text-align: center; }
+
+.game__button {
+  width: 250px;
+  height: 40px;
+  display: block;
+  margin: 20px auto;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff7c7c;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .game__button:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+
+.game__score-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.game__score {
+  width: 200px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  line-height: 50px;
+  background-color: #fcf7bb;
+  border-radius: 10px;
+  color: #fa744f; }
+  .game__score--best {
+    justify-self: end; }
+
+.game__score-text {
+  margin: 10px 0 5px;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+  grid-row: 1; }
+  .game__score-text--best {
+    justify-self: end; }
+
+.game__over {
+  display: none;
+  position: absolute;
+  width: 524px;
+  height: 524px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  padding: 5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(242, 163, 101, 0.95);
+  border-radius: 12px; }
+
+.game__over--show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.game__over-text {
+  margin: 0;
+  color: #fff;
+  font-size: 100px;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
